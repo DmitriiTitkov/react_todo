@@ -14,7 +14,6 @@ class TaskListSerialazer(ModelSerializer):
 
 class TaskSerialazer(ModelSerializer):
     lookup_url_kwarg = "task_pk"
-    task_list = PrimaryKeyRelatedField(read_only=True)
 
     class Meta:
         model = Task

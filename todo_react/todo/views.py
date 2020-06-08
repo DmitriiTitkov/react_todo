@@ -28,8 +28,3 @@ class TaskViewSet(ModelViewSet):
             qs = qs.filter(task_list=list_pk)
 
         return qs
-
-    def get_serializer_context(self):
-        ctx = super().get_serializer_context()
-        ctx.update({"task_list_id": self.kwargs.get("list_pk")})
-        return ctx
