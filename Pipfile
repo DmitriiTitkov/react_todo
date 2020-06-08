@@ -6,9 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-dajngo = "*"
+django = "*"
 django-rest-framework = "*"
-drf-nested-routers = "*"
 
 [requires]
 python_version = "3.7"
