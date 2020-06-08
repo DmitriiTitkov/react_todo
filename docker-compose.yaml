@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  todo_react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: todo_react
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    #command: ["tail", "-f", "/dev/null"]
+    command: ["python3.7", "todo_react/manage.py", "runserver", "0.0.0.0:80"]
