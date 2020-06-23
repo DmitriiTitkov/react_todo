@@ -1,2 +1,15 @@
+import React from "react";
+import ReactDOM from "react-dom";
 
-alert("Hello")
+
+class App extends React.Component {
+    render(){
+        return (
+            <div>
+                Hello everybody!
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<App/>, document.getElementById("spa-root"));
